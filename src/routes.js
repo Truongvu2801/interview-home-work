@@ -10,7 +10,7 @@ const routes = [
     },
     {
         path: '/blogs/:id',
-        exact: true,
+        exact: false,
         main: (props) => <BlogItemDetail {...props}/>
     }
 ]

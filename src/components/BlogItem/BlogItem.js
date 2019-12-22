@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class BlogItem extends Component {
   render() {
     const {post} = this.props; 

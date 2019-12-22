@@ -22,7 +22,6 @@ export const getBlogDetailById = postId => {
 };
 
 export const createPost = data => {
-  // const post = Api.createPost(data)
   return {
     type: blogConstants.CREATE_POST,
     payload: {

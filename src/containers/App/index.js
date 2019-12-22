@@ -12,6 +12,8 @@ class App extends Component {
   showContentsMenus = routes => {
     var result = null;
     if (routes.length > 0) {
+      console.log(routes);
+      
       result = routes.map((route, index) => {
         return (
           <div>
@@ -25,7 +27,6 @@ class App extends Component {
         );
       });
     }
-    console.log('hjasdjhas');
     return <Switch>{result}</Switch>;
   };
 
@@ -42,7 +43,7 @@ class App extends Component {
               </Content>
             </Fragment>
           </Switch>
-          {/* <Redirect exact from="/" to="/blogs" />  */}
+          <Redirect exact from="/" to="/blogs" /> 
         </Router>
       </Provider>
     );
